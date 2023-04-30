@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+/* before use:
+cd promptmaker
+git clone https://github.com/pharmapsychotic/clip-interrogator
+*/
+
 const fs = require("fs").promises;
 const path = require("path");
 
