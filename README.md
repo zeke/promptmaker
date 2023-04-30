@@ -2,6 +2,8 @@
 
 Generate random artistic text prompts for use with generative AI models
 
+Data comes from the [CLIP Interrogator](https://github.com/pharmapsychotic/clip-interrogator)
+
 ## Installation
 
 ```sh
