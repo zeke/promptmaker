@@ -12,12 +12,21 @@ npm install promptmaker
 
 ## Usage
 
-```
-// Get a random prompt
-promptmaker()
+Call the function without arguments to get a random prompt:
 
-// Get a random prompt about cats
-promptmaker({subject: 'cats'})
+```js
+promptmaker();
+// -> graffiti art of ocean waves mannerism by Georg Schrimpf, distant expression, eyes closed or not visible
+```
+
+Specify an optional medium, subject, artist, movement, or flavors:
+
+```js
+promptmaker({
+  medium: "graffiti art",
+  subject: "ocean waves",
+});
+// -> graffiti art of ocean waves mannerism by Georg Schrimpf, distant expression, eyes closed or not visible
 ```
 
 ## API
@@ -36,6 +45,12 @@ Returns a string in the format:
 
 ```
 {medium} of {subject} {movement} by {artist}, {flavors}
+```
+
+## CLI
+
+```
+npx promptmaker <optional-subject>
 ```
 
 ## Tests

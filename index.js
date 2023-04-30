@@ -9,7 +9,7 @@ const promptmaker = (opts = {}) => {
   const movement = "movement" in opts ? opts.movement : sample(data.movements);
   const artist = "artist" in opts ? opts.artist : sample(data.artists);
   const flavors =
-    "flavors" in opts ? opts.flavors : sample(data.flavors, random(1, 10));
+    "flavors" in opts ? opts.flavors : sample(data.flavors, random(1, 3));
   let prompt = `${medium} of ${subject} ${movement} by ${artist}`;
   if (flavors) prompt += `, ${flavors.join(", ")}`;
   return prompt;

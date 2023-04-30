@@ -1,4 +1,4 @@
-const promptmaker = require("./index.js");
+const promptmaker = require(".");
 
 test("generates a prompt string", () => {
   const prompt = promptmaker();

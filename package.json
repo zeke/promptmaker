@@ -6,6 +6,8 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
+  "main": "index.js",
+  "bin": "./cli.js",
   "devDependencies": {
     "jest": "^29.5.0"
   },
