@@ -1,6 +1,6 @@
 {
   "name": "promptmaker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/zeke/promptmaker",
   "description": "Generate random artistic text prompts for use with generative AI models",
   "dependencies": {
