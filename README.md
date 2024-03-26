@@ -47,6 +47,22 @@ Returns a string in the format:
 {medium} of {subject} {movement} by {artist}, {flavors}
 ```
 
+### `promptmaker.artists`
+
+An array of artist names, like "Constance Copeman", "Amos Sewell", and "Amelia Robertson Hill"
+
+### `promptmaker.mediums`
+
+An array of artistic mediums, like "a flemish Baroque", "a jigsaw puzzle", and "an oil on canvas painting"
+
+### `promptmaker.movements`
+
+An array of movements, like "abstract expressionism", "art deco", and "baroque"
+
+### `promptmaker.flavors`
+
+An array of flavors, like "highly detailed", "cinematic lighting", and "eyes open, looking at viewer"
+
 ## CLI
 
 ```
