@@ -11,10 +11,11 @@ test("takes an optional subject", () => {
   expect(prompt).toMatch(/cheese/);
 });
 
-test("takes an optional subject", () => {
-  const prompt = promptmaker({ subject: "cheese" });
+test("allows artist to be disabled", () => {
+  const prompt = promptmaker({ subject: "untitled", artist: false });
   expect(typeof prompt).toBe("string");
-  expect(prompt).toMatch(/cheese/);
+  console.log(prompt)
+  expect(prompt).not.toContain(" by ");
 });
 
 test("takes lots of options", () => {

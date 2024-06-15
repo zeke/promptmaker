@@ -10,8 +10,14 @@ const promptmaker = (opts = {}) => {
   const artist = "artist" in opts ? opts.artist : sample(data.artists);
   const flavors =
     "flavors" in opts ? opts.flavors : sample(data.flavors, random(1, 3));
-  let prompt = `${medium} of ${subject} ${movement} by ${artist}`;
+  let prompt = `${medium} of ${subject} ${movement}`;
+
+  // artist can be disabled by setting a falsy value
+  if (artist) prompt += ` by ${artist}`;
+
+  // allow custom flavors
   if (flavors) prompt += `, ${flavors.join(", ")}`;
+
   return prompt;
 };
 

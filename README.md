@@ -37,15 +37,17 @@ Options, all of which default to random if unspecified:
 
 - `medium` String
 - `subject` String
-- `artist` String
-- `movement` String
-- `flavors` Array of Strings
+- `artist` String.
+- `movement` String. Set to `false` to exclude it.
+- `flavors` Array of Strings. Se
 
 Returns a string in the format:
 
 ```
 {medium} of {subject} {movement} by {artist}, {flavors}
 ```
+
+To exclude any of the above options from the generated prompt string, set them to `false`.
 
 ### `promptmaker.artists`
 
