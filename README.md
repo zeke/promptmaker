@@ -19,14 +19,16 @@ promptmaker();
 // -> graffiti art of ocean waves mannerism by Georg Schrimpf, distant expression, eyes closed or not visible
 ```
 
-Specify an optional medium, subject, artist, movement, or flavors:
+Specify an optional medium, subject, artist, movement, or flavors. Set falsy value to omit that part of the prompt:
 
 ```js
 promptmaker({
   medium: "graffiti art",
   subject: "ocean waves",
+  artist: "unknown artist",
+  flavors: null
 });
-// -> graffiti art of ocean waves mannerism by Georg Schrimpf, distant expression, eyes closed or not visible
+// -> graffiti art of ocean waves abstract expressionism by unknown artist 
 ```
 
 ## API
@@ -47,7 +49,7 @@ Returns a string in the format:
 {medium} of {subject} {movement} by {artist}, {flavors}
 ```
 
-To exclude any of the above options from the generated prompt string, set them to `false`.
+To exclude any of the above options from the generated prompt string, set them to a falsy value, like `null` or `false`.
 
 ### `promptmaker.artists`
 
